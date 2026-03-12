@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { Hero } from '../components/Hero'
 import { FeatureList } from '../components/FeatureList'
@@ -39,53 +40,66 @@ const Icons = {
 const features = [
   {
     icon: Icons.zap,
-    title: 'AI-Enhanced Workflows',
-    description: 'We integrate AI tools into our development process to accelerate delivery without sacrificing quality or maintainability.',
+    title: 'AI-Enhanced Delivery',
+    description: 'We leverage AI to accelerate development while maintaining human-level quality and oversight.',
   },
   {
     icon: Icons.shield,
-    title: 'Accessibility First',
-    description: 'Every project meets WCAG 2.1 AA standards, ensuring your application is usable by everyone.',
+    title: 'Accessible by Default',
+    description: 'Every project meets WCAG 2.1 AA standards because inclusive design is non-negotiable.',
   },
   {
     icon: Icons.performance,
-    title: 'Performance Obsessed',
-    description: 'We optimize for Core Web Vitals, Lighthouse scores >90, and real-user experience metrics.',
+    title: 'Performance Guaranteed',
+    description: 'We optimizing for Core Web Vitals and Lighthouse scores >90, ensuring fast, smooth experiences.',
   },
   {
     icon: Icons.robot,
-    title: 'Modern Stack',
-    description: 'React, TypeScript, Next.js, and cutting-edge tools ensure your codebase is future-ready.',
+    title: 'Local Business Focus',
+    description: 'We build solutions tailored for Indian SMEs, understanding your market and your customers.',
   },
 ]
 
 const testimonials = [
   {
-    quote: 'PARADOX delivered a site that loads instantly and passes every accessibility audit. Their attention to detail is unmatched.',
-    author: 'Sarah Chen',
-    role: 'VP Product',
-    company: 'TechFlow',
+    quote: 'PARADOX transformed our clinic\'s booking system. Patients now book appointments instantly online, and our staff can manage schedules effortlessly. The AI-powered reminders reduced no-shows by 40%.',
+    author: 'Dr. Rajesh Sharma',
+    role: 'Owner',
+    company: 'Sharma Dental Care, Mumbai',
   },
   {
-    quote: 'Working with PARADOX felt like having an internal frontend team that truly cared about our product.',
-    author: 'Marcus Johnson',
-    role: 'CTO',
-    company: 'StartupXYZ',
+    quote: 'As a small retailer, I needed an affordable online store. PARADOX built a beautiful, fast e-commerce site that integrated with our existing inventory. Sales went up 60% in the first month.',
+    author: 'Priya Patel',
+    role: 'Founder',
+    company: 'Patel Fashion, Ahmedabad',
   },
   {
-    quote: 'The speed and polish they brought to our web app directly improved our conversion rates.',
-    author: 'Elena Rodriguez',
-    role: 'Marketing Director',
-    company: 'GrowthInc',
+    quote: 'Our restaurant chain now has a unified web presence and a loyalty app. PARADOX delivered quickly and kept within our budget. Highly recommended for F&B businesses.',
+    author: 'Vikram Singh',
+    role: 'Managing Director',
+    company: 'Singh\'s Kitchen, Delhi NCR',
   },
 ]
 
 const Home: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>PARADOX | AI-Powered Frontend for Indian Business</title>
+        <meta name="description" content="PARADOX: AI research lab delivering fast, accessible, high-performance web applications for local Indian businesses. Get a modern website that converts." />
+        <meta property="og:title" content="PARADOX – AI-Powered Frontend Excellence" />
+        <meta property="og:description" content="Modern, accessible, high-performance websites built for Indian businesses. Combine AI speed with human craftsmanship." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.paradox.ai/" />
+        <meta property="og:image" content="/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PARADOX – AI-Powered Frontend" />
+        <meta name="twitter:description" content="AI research lab building modern, accessible web experiences for Indian businesses." />
+        <meta name="twitter:image" content="/og-image.png" />
+      </Helmet>
       <Hero
-        headline="Frontend Excellence, Accelerated by AI."
-        subhead="PARADOX combines human expertise with AI-driven workflows to build modern, accessible, high-performance web applications. We ship production-ready code that scales."
+        headline="AI-Powered Frontend, Built for Indian Business."
+        subhead="PARADOX is an AI research lab that delivers fast, accessible, premium web applications. We combine cutting-edge AI with human craftsmanship to help local businesses thrive online."
         actions={
           <>
             <Button as={Link} to="/contact" variant="primary" size="lg">

@@ -10,21 +10,34 @@ import { Card } from '../components/Card'
 
 const Contact: React.FC = () => {
   const handleSubmit = async (data: { name: string; email: string; company: string; message: string }) => {
-    // In production, this would send to an API endpoint
-    console.log('Form submitted:', data)
-    // Simulate network delay
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    // Try to submit to Formspree if endpoint is configured
+    const endpoint = (import.meta as any).env?.VITE_FORMSPREE_ENDPOINT
+
+    if (endpoint) {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+      if (!response.ok) {
+        throw new Error('Network response was not ok')
+      }
+    } else {
+      // Development fallback: simulate network delay
+      console.warn('VITE_FORMSPREE_ENDPOINT not set — skipping actual submission')
+      await new Promise(resolve => setTimeout(resolve, 1000))
+    }
   }
 
   return (
     <>
       <Helmet>
         <title>Contact | PARADOX</title>
-        <meta name="description" content="Get in touch with PARADOX for your frontend project. We'll respond within 24 hours." />
+        <meta name="description" content="Contact PARADOX for AI-powered web development, performance optimization, and accessibility services. We serve businesses across India." />
       </Helmet>
       <Hero
-        headline="Get in Touch"
-        subhead="Tell us about your project and we'll get back to you within 24 hours."
+        headline="Start Your AI-Powered Project"
+        subhead="Ready to transform your business with intelligent web solutions? Get in touch with PARADOX today."
         align="center"
       />
 

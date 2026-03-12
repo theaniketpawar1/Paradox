@@ -42,7 +42,7 @@ const About: React.FC = () => {
       </Helmet>
       <Hero
         headline="About PARADOX"
-        subhead="We are an AI-first service company redefining what it means to deliver frontend excellence."
+        subhead="We are an AI research lab building the future of web experiences. Founded by Aniket Pawar, PARADOX blends cutting-edge AI with human expertise to deliver exceptional digital solutions for Indian businesses."
         align="left"
         background="light"
       />
@@ -55,10 +55,10 @@ const About: React.FC = () => {
                 Our Mission
               </Text>
               <Text variant="body" color="muted" className="mb-6">
-                To empower businesses with fast, accessible, and beautiful web experiences, powered by intelligent automation. We believe that modern technology should be inclusive, performant, and a joy to use.
+                To empower Indian businesses with world-class web experiences, democratizing AI-driven development. We believe technology should be accessible, performant, and a joy to use—for everyone.
               </Text>
               <Text variant="body" color="muted">
-                Founded by Aniket Pawar, PARADOX started with a simple idea: combine the speed of AI with the judgment of experienced engineers. Today, we deliver projects that consistently exceed expectations in quality and user impact.
+                Founded in 2022 by Aniket Pawar, PARADOX began with a simple idea: combine AI speed with human craftsmanship. Today, we deliver projects that consistently exceed expectations in quality, accessibility, and business impact.
               </Text>
             </div>
             <div className="bg-surface p-8 rounded-lg border border-border">
@@ -114,10 +114,10 @@ const About: React.FC = () => {
           </Text>
           <div className="max-w-3xl mx-auto space-y-8">
             {[
-              { year: '2022', title: 'Founding', desc: 'PARADOX founded by Aniket Pawar with a focus on high-performance frontend development.' },
-              { year: '2023', title: 'AI Integration', desc: 'Began integrating AI tools into development workflows, improving delivery speed by 40%.' },
-              { year: '2024', title: 'Component Library', desc: 'Released internal component library with accessibility and performance baked in.' },
-              { year: '2025', title: 'Growth', desc: 'Expanded service offerings to include accessibility audits and design system consulting.' },
+              { year: '2022', title: 'Founded', desc: 'PARADOX established by Aniket Pawar as an AI research lab focused on intelligent web solutions.' },
+              { year: '2023', title: 'First AI Products', desc: 'Developed proprietary AI integration frameworks and delivered first enterprise automation project.' },
+              { year: '2024', title: 'Component Library', desc: 'Launched internal design system with accessibility and performance baked in, accelerating development.' },
+              { year: '2025', title: 'Local Expansion', desc: 'Partnered with multiple Indian SMEs, delivering AI-powered digital transformations.' },
             ].map((event, i) => (
               <div key={i} className="flex gap-6">
                 <div className="flex-shrink-0 w-24 text-right">

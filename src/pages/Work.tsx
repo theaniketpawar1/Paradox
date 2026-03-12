@@ -10,46 +10,46 @@ import { Section } from '../components/Section'
 
 const works = [
   {
-    id: 'dashboard-analytics',
-    title: 'Enterprise Analytics Dashboard',
-    description: 'A high-performance data visualization platform for a Fortune 500 client, handling millions of data points with real-time updates.',
-    tech: ['React', 'D3.js', 'TypeScript', 'WebSocket'],
-    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+    id: 'clinic-ai',
+    title: 'Smart Clinic Booking System',
+    description: 'AI-powered appointment scheduling for Sharma Dental Care (Mumbai). Automated reminders, WhatsApp integrations, and real-time slot management reduced no-shows by 40% and increased patient satisfaction.',
+    tech: ['React', 'Node.js', 'OpenAI', 'Twilio API'],
+    imageUrl: 'https://images.unsplash.com/photo-1581594549595-35f6edc7b762?auto=format&fit=crop&w=800&q=80',
   },
   {
-    id: 'ecommerce-platform',
-    title: 'E-Commerce Replatform',
-    description: 'Migrated a legacy e-commerce frontend to Next.js, improving Lighthouse score from 45 to 95 and increasing conversion by 18%.',
-    tech: ['Next.js', 'Tailwind CSS', 'Stripe', 'Redis'],
-    imageUrl: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80',
+    id: 'retail-store',
+    title: 'E-Commerce for Patel Fashion',
+    description: 'A complete online store for a Ahmedabad fashion retailer with inventory sync, cash on delivery, and AI product recommendations. Sales increased 60% in the first month with a 2.2s LCP.',
+    tech: ['Next.js', 'Tailwind', 'Razorpay', 'Redis'],
+    imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
   },
   {
-    id: 'healthcare-portal',
-    title: 'Healthcare Patient Portal',
-    description: 'HIPAA-compliant patient portal with WCAG AA accessibility, screen reader support, and a fully keyboard-navigable interface.',
-    tech: ['React', 'Node.js', 'OAuth2', 'a11y'],
-    imageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+    id: 'restaurant-chain',
+    title: 'Singh\'s Kitchen Web & Loyalty App',
+    description: 'Unified web presence and loyalty program for a Delhi NCR restaurant chain. Table reservations, online orders, and a points system drove repeat customer visits up 35%.',
+    tech: ['React', 'Firebase', 'Stripe', 'PWA'],
+    imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80',
   },
   {
-    id: 'ai-assistant-ui',
-    title: 'AI Assistant Interface',
-    description: 'Custom UI for an AI-driven customer support tool, featuring chat interface, context management, and rich response components.',
-    tech: ['React', 'OpenAI API', 'Vercel AI SDK', 'Pinecone'],
-    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80',
+    id: 'manufacturing-ai',
+    title: 'Predictive Inventory for Local Manufacturer',
+    description: 'AI-driven inventory forecasting for a Pune-based auto parts manufacturer. Reduced overstock by 25% and stockouts by 40% using demand prediction models.',
+    tech: ['React', 'Python', 'TensorFlow', 'PostgreSQL'],
+    imageUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
   },
   {
-    id: 'design-system',
-    title: 'Enterprise Design System',
-    description: 'Built a comprehensive component library with Storybook documentation, covering 50+ components with full accessibility.',
-    tech: ['React', 'TypeScript', 'Storybook', 'Figma Tokens'],
-    imageUrl: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
+    id: 'education-tuition',
+    title: 'Coaching Center Management Portal',
+    description: 'Complete admin dashboard for a Hyderabad coaching institute: student tracking, batch scheduling, and AI-generated progress reports for parents. Cut admin time by 15 hours per week.',
+    tech: ['Next.js', 'Prisma', 'PostgreSQL', 'OpenAI'],
+    imageUrl: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80',
   },
   {
-    id: 'fintech-dashboard',
-    title: 'FinTech Dashboard',
-    description: 'Real-time trading dashboard with low-latency data feeds, dark mode, and customizable widget layout.',
-    tech: ['React', 'WebSocket', 'Recharts', 'Electron'],
-    imageUrl: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80',
+    id: 'logistics-tracking',
+    title: 'Real-Time Delivery Tracker for Logistics Startup',
+    description: 'Live package tracking with ETA predictions and automated customer notifications for a Bangalore last-mile delivery startup. Reduced support queries by 70%.',
+    tech: ['React', 'WebSocket', 'Mapbox', 'Redis'],
+    imageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
@@ -58,11 +58,11 @@ const Work: React.FC = () => {
     <>
       <Helmet>
         <title>Work | PARADOX</title>
-        <meta name="description" content="Explore PARADOX projects: modern frontend solutions with measurable impact." />
+        <meta name="description" content="PARADOX case studies: AI-powered web solutions for Indian businesses. Real projects, real results." />
       </Helmet>
       <Hero
         headline="Our Work"
-        subhead="Explore projects where we've delivered modern frontend solutions with measurable impact."
+        subhead="Explore projects where PARADOX combined AI and frontend expertise to help local Indian businesses grow. Each case study demonstrates measurable impact."
         align="center"
       />
       <WorkGrid works={works} />

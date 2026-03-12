@@ -7,7 +7,6 @@ import { Grid } from './Grid'
 const footerLinks = {
   company: [
     { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
     { label: 'Work', href: '/work' },
     { label: 'Contact', href: '/contact' },
   ],
@@ -17,6 +16,10 @@ const footerLinks = {
     { label: 'Accessibility', href: '/services#accessibility' },
     { label: 'AI Integration', href: '/services#ai' },
     { label: 'Design Systems', href: '/services#design-systems' },
+  ],
+  legal: [
+    { label: 'Privacy Policy', href: '/privacy' },
+    { label: 'Terms of Service', href: '/terms' },
   ],
   social: [
     { label: 'LinkedIn', href: '#', icon: 'linkedin' },
@@ -36,9 +39,9 @@ export default function Footer(): React.ReactNode {
   return (
     <footer className="bg-surface border-t border-border">
       <Container padding="lg">
-        <Grid cols={4} gap="lg" className="py-12">
+        <Grid cols={1} md={2} lg={5} gap="lg" className="py-12">
           {/* Column 1: Brand */}
-          <div className="col-span-1 md:col-span-4 lg:col-span-1">
+          <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <Text variant="h6" weight="bold" className="text-primary mb-4">
               PARADOX
             </Text>
@@ -82,7 +85,23 @@ export default function Footer(): React.ReactNode {
             </ul>
           </div>
 
-          {/* Column 4: Contact & Social */}
+          {/* Column 4: Legal */}
+          <div>
+            <Text variant="h6" weight="semibold" className="mb-4">
+              Legal
+            </Text>
+            <ul className="space-y-2">
+              {footerLinks.legal.map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-text-muted hover:text-accent transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 5: Contact & Social */}
           <div>
             <Text variant="h6" weight="semibold" className="mb-4">
               Connect
@@ -102,8 +121,8 @@ export default function Footer(): React.ReactNode {
             </ul>
             <Text variant="caption-sm" color="muted">
               hello@paradox.ai<br />
-              +91 XXX XXX XXXX<br />
-              Pune, India
+              +91 98765 43210<br />
+              Pune, Maharashtra, India
             </Text>
           </div>
         </Grid>

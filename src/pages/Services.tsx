@@ -23,20 +23,20 @@ const services = [
     id: 'custom',
     icon: ServiceIcons.custom,
     title: 'Custom Frontend Development',
-    description: 'We build responsive, accessible web applications using React, Vue, or Angular with TypeScript for type safety and scalability.',
+    description: 'We build responsive, accessible web applications using React and TypeScript, tailored for Indian businesses. From e-commerce to dashboards, we deliver maintainable code that scales with your growth.',
     tech: ['React', 'TypeScript', 'Next.js', 'Vite'],
     benefits: [
-      'Component-based architecture for maintainability',
-      'Comprehensive testing with >80% coverage',
-      'Clear documentation and API contracts',
-      'Handoff-ready for in-house teams',
+      'Maintainable architecture you own',
+      'Comprehensive testing and clean code',
+      'Documentation that your team can use',
+      'Easy handoff to internal developers',
     ],
   },
   {
     id: 'performance',
     icon: ServiceIcons.performance,
     title: 'Performance Optimization',
-    description: 'We audit and optimize your application to achieve Lighthouse scores >90 and excellent Core Web Vitals.',
+    description: 'We audit and optimize your site for speed, achieving Lighthouse scores >90 and excellent Core Web Vitals. Faster sites rank higher, convert better, and keep users engaged.',
     tech: ['Web Vitals', 'Code Splitting', 'Image Optimization', 'Service Workers'],
     benefits: [
       'Faster load times improve SEO and conversions',
@@ -49,7 +49,7 @@ const services = [
     id: 'accessibility',
     icon: ServiceIcons.a11y,
     title: 'Accessibility Audits & Remediation',
-    description: 'We ensure your digital products comply with WCAG 2.1 AA and are usable by everyone.',
+    description: 'We ensure your website complies with WCAG 2.1 AA and is usable by everyone. Inclusive design expands your audience and reduces legal risk while improving overall UX.',
     tech: ['axe-core', 'Screen Reader Testing', 'ARIA', 'Keyboard Navigation'],
     benefits: [
       'Inclusive design expands your audience',
@@ -62,7 +62,7 @@ const services = [
     id: 'ai',
     icon: ServiceIcons.ai,
     title: 'AI Integration & Automation',
-    description: 'We integrate AI capabilities—chatbots, content generation, smart forms—into your web applications.',
+    description: 'We integrate AI into your web presence: chatbots, smart recommendation engines, content generation, and automated workflows—all tailored for Indian businesses.',
     tech: ['OpenAI API', 'Embeddings', 'RAG Pipelines', 'Automated Testing'],
     benefits: [
       'Automate repetitive tasks and content workflows',
@@ -75,7 +75,7 @@ const services = [
     id: 'design-systems',
     icon: ServiceIcons.designSystem,
     title: 'Design Systems & Component Libraries',
-    description: 'We create reusable, documented component libraries that align your design and engineering teams.',
+    description: 'We create reusable design systems that align your team and accelerate future projects. Consistent components mean faster delivery and lower costs over time.',
     tech: ['Storybook', 'Figma Tokens', 'CSS-in-JS', 'TypeScript'],
     benefits: [
       'Accelerate product development with reusable components',
@@ -95,7 +95,7 @@ const Services: React.FC = () => {
       </Helmet>
       <Hero
         headline="Our Services"
-        subhead="We offer a full suite of frontend services powered by modern tooling and AI-enhanced workflows."
+        subhead="PARADOX combines AI efficiency with expert craftsmanship to deliver frontend solutions that help Indian businesses grow. All services include our quality guarantees: accessibility, performance, and ongoing support."
         align="center"
       />
 
