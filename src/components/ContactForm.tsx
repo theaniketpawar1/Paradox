@@ -102,7 +102,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
               value={formData.name}
               onChange={handleChange}
               className={clsx(
-                'w-full px-4 py-2 border rounded-lg bg-background text-text focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
+                'w-full px-4 py-2 border rounded-lg bg-background text-text placeholder:text-text-muted placeholder:opacity-80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
                 errors.name && 'border-error'
               )}
             />
@@ -119,7 +119,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
               value={formData.email}
               onChange={handleChange}
               className={clsx(
-                'w-full px-4 py-2 border rounded-lg bg-background text-text focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
+                'w-full px-4 py-2 border rounded-lg bg-background text-text placeholder:text-text-muted placeholder:opacity-80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent',
                 errors.email && 'border-error'
               )}
             />
@@ -136,7 +136,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             name="company"
             value={formData.company}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-border rounded-lg bg-background text-text focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+            className="w-full px-4 py-2 border border-border rounded-lg bg-background text-text placeholder:text-text-muted placeholder:opacity-80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
           />
         </div>
         <div className="mb-6">
@@ -150,7 +150,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             value={formData.message}
             onChange={handleChange}
             className={clsx(
-              'w-full px-4 py-2 border rounded-lg bg-background text-text focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-y',
+              'w-full px-4 py-2 border rounded-lg bg-background text-text placeholder:text-text-muted placeholder:opacity-80 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent resize-y',
               errors.message && 'border-error'
             )}
           />
