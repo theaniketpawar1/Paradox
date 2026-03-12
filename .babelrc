@@ -1,0 +1,6 @@
+module.exports = {
+  rules: {
+    'react-refresh/babel': [require.resolve('react-refresh/babel')],
+  },
+  plugins: ['react-refresh/babel'],
+}

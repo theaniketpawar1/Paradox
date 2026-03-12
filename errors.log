@@ -1,0 +1,81 @@
+src/App.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/components/ContactForm.tsx(3,1): error TS6133: 'Container' is declared but its value is never read.
+src/components/ErrorBoundary.tsx(38,12): error TS2533: Object is possibly 'null' or 'undefined'.
+src/components/ErrorBoundary.tsx(38,23): error TS2339: Property 'children' does not exist on type 'string | number | boolean | Readonly<ReactElement<any, string | JSXElementConstructor<any>>> | Readonly<Iterable<ReactNode>> | Readonly<...>'.
+src/components/FeatureList.tsx(2,1): error TS6133: 'clsx' is declared but its value is never read.
+src/components/FeatureList.tsx(4,1): error TS6133: 'Button' is declared but its value is never read.
+src/components/FeatureList.tsx(22,6): error TS2552: Cannot find name 'Section'. Did you mean 'Selection'?
+src/components/FeatureList.tsx(42,7): error TS2552: Cannot find name 'Section'. Did you mean 'Selection'?
+src/components/Footer.tsx(2,1): error TS6133: 'clsx' is declared but its value is never read.
+src/components/Footer.tsx(39,18): error TS2322: Type '{ children: Element; padding: string; }' is not assignable to type 'IntrinsicAttributes & ContainerProps'.
+src/components/Footer.tsx(46,19): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/components/Hero.tsx(4,1): error TS6133: 'Button' is declared but its value is never read.
+src/components/Hero.tsx(62,14): error TS2304: Cannot find name 'Flex'.
+src/components/Hero.tsx(64,15): error TS2304: Cannot find name 'Flex'.
+src/components/Navbar.tsx(2,1): error TS6133: 'clsx' is declared but its value is never read.
+src/components/Navbar.tsx(22,10): error TS2304: Cannot find name 'Flex'.
+src/components/Navbar.tsx(45,21): error TS2322: Type 'ForwardRefExoticComponent<LinkProps & RefAttributes<HTMLAnchorElement>>' is not assignable to type '"button"'.
+src/components/Navbar.tsx(68,11): error TS2304: Cannot find name 'Flex'.
+src/components/Navbar.tsx(84,23): error TS2322: Type 'ForwardRefExoticComponent<LinkProps & RefAttributes<HTMLAnchorElement>>' is not assignable to type '"button"'.
+src/components/PricingCard.tsx(45,19): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/components/PricingCard.tsx(60,19): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/components/PricingCard.tsx(81,6): error TS2304: Cannot find name 'Section'.
+src/components/PricingCard.tsx(89,24): error TS2322: Type '{ children: Element[]; cols: 1; md: number; gap: "lg"; className: string; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/components/PricingCard.tsx(95,7): error TS2304: Cannot find name 'Section'.
+src/components/Testimonials.tsx(2,1): error TS6133: 'clsx' is declared but its value is never read.
+src/components/Testimonials.tsx(21,6): error TS2552: Cannot find name 'Section'. Did you mean 'Selection'?
+src/components/Testimonials.tsx(26,24): error TS2322: Type '{ children: Element[]; cols: 1; md: number; lg: number; gap: "lg"; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/components/Testimonials.tsx(35,23): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/components/Testimonials.tsx(47,7): error TS2552: Cannot find name 'Section'. Did you mean 'Selection'?
+src/components/Text.tsx(69,6): error TS2322: Type '{ children: ReactNode; defaultChecked?: boolean | undefined; defaultValue?: string | number | readonly string[] | undefined; suppressContentEditableWarning?: boolean | undefined; ... 258 more ...; className: string; }' is not assignable to type 'SVGProps<SVGSymbolElement>'.
+src/components/WorkCard.tsx(2,1): error TS6133: 'clsx' is declared but its value is never read.
+src/components/WorkCard.tsx(4,1): error TS6133: 'Button' is declared but its value is never read.
+src/components/WorkCard.tsx(65,6): error TS2304: Cannot find name 'Section'.
+src/components/WorkCard.tsx(66,8): error TS2304: Cannot find name 'Container'.
+src/components/WorkCard.tsx(70,24): error TS2322: Type '{ children: Element[]; cols: 1; md: number; lg: number; gap: "lg"; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/components/WorkCard.tsx(75,9): error TS2304: Cannot find name 'Container'.
+src/components/WorkCard.tsx(76,7): error TS2304: Cannot find name 'Section'.
+src/lib/components.ts(7,15): error TS2459: Module '"../components/Text"' declares 'TextProps' locally, but it is not exported.
+src/lib/components.ts(11,15): error TS2459: Module '"../components/Container"' declares 'ContainerProps' locally, but it is not exported.
+src/lib/components.ts(15,15): error TS2459: Module '"../components/Grid"' declares 'GridProps' locally, but it is not exported.
+src/lib/components.ts(19,15): error TS2459: Module '"../components/Flex"' declares 'FlexProps' locally, but it is not exported.
+src/lib/components.ts(23,15): error TS2459: Module '"../components/Card"' declares 'CardProps' locally, but it is not exported.
+src/lib/components.ts(27,15): error TS2459: Module '"../components/Section"' declares 'SectionProps' locally, but it is not exported.
+src/lib/components.ts(31,15): error TS2459: Module '"../components/Hero"' declares 'HeroProps' locally, but it is not exported.
+src/lib/components.ts(54,24): error TS2307: Cannot find module '../components/pages' or its corresponding type declarations.
+src/lib/icons.tsx(1,39): error TS2307: Cannot find module './LucideIcon' or its corresponding type declarations.
+src/pages/About.tsx(3,10): error TS6133: 'User' is declared but its value is never read.
+src/pages/About.tsx(9,1): error TS6133: 'Button' is declared but its value is never read.
+src/pages/About.tsx(10,1): error TS6133: 'Link' is declared but its value is never read.
+src/pages/About.tsx(44,8): error TS2304: Cannot find name 'Hero'.
+src/pages/About.tsx(53,26): error TS2322: Type '{ children: Element[]; cols: 1; lg: number; gap: "xl"; className: string; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/pages/About.tsx(75,29): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/About.tsx(90,26): error TS2322: Type '{ children: Element[]; cols: 1; md: number; lg: number; gap: "lg"; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/pages/About.tsx(99,23): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Contact.tsx(9,1): error TS6133: 'Button' is declared but its value is never read.
+src/pages/Contact.tsx(25,8): error TS2304: Cannot find name 'Hero'.
+src/pages/Contact.tsx(33,26): error TS2322: Type '{ children: Element[]; cols: 1; lg: number; gap: "xl"; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/pages/Contact.tsx(40,25): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Contact.tsx(48,25): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Contact.tsx(56,25): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Contact.tsx(76,27): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Contact.tsx(79,27): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Home.tsx(9,1): error TS6133: 'Grid' is declared but its value is never read.
+src/pages/Home.tsx(91,21): error TS2322: Type 'ForwardRefExoticComponent<LinkProps & RefAttributes<HTMLAnchorElement>>' is not assignable to type '"button"'.
+src/pages/Home.tsx(94,21): error TS2322: Type 'ForwardRefExoticComponent<LinkProps & RefAttributes<HTMLAnchorElement>>' is not assignable to type '"button"'.
+src/pages/Home.tsx(101,8): error TS2552: Cannot find name 'Section'. Did you mean 'Selection'?
+src/pages/Home.tsx(108,9): error TS2552: Cannot find name 'Section'. Did you mean 'Selection'?
+src/pages/Home.tsx(112,8): error TS2304: Cannot find name 'Section'.
+src/pages/Home.tsx(121,21): error TS2322: Type 'ForwardRefExoticComponent<LinkProps & RefAttributes<HTMLAnchorElement>>' is not assignable to type '"button"'.
+src/pages/Home.tsx(126,9): error TS2304: Cannot find name 'Section'.
+src/pages/legal.ts(2,34): error TS2307: Cannot find module './Terms' or its corresponding type declarations.
+src/pages/Privacy.tsx(51,19): error TS2322: Type 'ForwardRefExoticComponent<LinkProps & RefAttributes<HTMLAnchorElement>>' is not assignable to type '"button"'.
+src/pages/Services.tsx(95,8): error TS2304: Cannot find name 'Hero'.
+src/pages/Services.tsx(106,26): error TS2322: Type '{ children: Element[]; cols: 1; md: number; lg: number; gap: "lg"; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/pages/Services.tsx(137,31): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Services.tsx(141,27): error TS2322: Type 'ForwardRefExoticComponent<LinkProps & RefAttributes<HTMLAnchorElement>>' is not assignable to type '"button"'.
+src/pages/Services.tsx(156,26): error TS2322: Type '{ children: Element[]; cols: 1; md: number; lg: number; gap: "md"; }' is not assignable to type 'IntrinsicAttributes & GridProps'.
+src/pages/Services.tsx(171,23): error TS2322: Type '"body-sm"' is not assignable to type 'TextVariant | undefined'.
+src/pages/Work.tsx(61,8): error TS2304: Cannot find name 'Hero'.
+src/pages/Work.tsx(73,25): error TS2304: Cannot find name 'Link'.
+src/pages/Work.tsx(73,31): error TS2322: Type '{ children: string; as: any; to: string; variant: "primary"; size: "lg"; }' is not assignable to type 'IntrinsicAttributes & { variant?: ButtonVariant | undefined; size?: ButtonSize | undefined; fullWidth?: boolean | undefined; isLoading?: boolean | undefined; children: ReactNode; } & PolymorphicProp<...> & Omit<...> & RefAttributes<...>'.
