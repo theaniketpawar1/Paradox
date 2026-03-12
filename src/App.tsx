@@ -14,7 +14,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 function App() {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Paradox">
         <div className="min-h-screen flex flex-col bg-background text-text">
           <Navbar />
           <main id="main" tabIndex={-1} className="flex-1">
